@@ -1,4 +1,3 @@
-Proyecto Base Datos 
 📌 Description: 
 This system organizes and manages financial transaction data from Fintech platforms like Nequi and Daviplata.
 It is built to normalize disorganized Excel data into a structured PostgreSQL database, providing:
