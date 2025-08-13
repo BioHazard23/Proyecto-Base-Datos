@@ -5,7 +5,7 @@ It is built to normalize disorganized Excel data into a structured PostgreSQL da
  - Relational model design
  - Bulk CSV import
  - CRUD operations for Customers
- - Advanced SQL queries required by the client
+ - Advanced SQL queries required by the client.
 
 ---
 
