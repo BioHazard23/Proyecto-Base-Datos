@@ -1,0 +1,160 @@
+{
+  "info": {
+    "name": "Fintech-CRUD",
+    "_postman_id": "uuid-placeholder",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Create Customer",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"first_name\":\"Ana\",\"last_name\":\"Gomez\",\"email\":\"ana.gomez@example.com\"}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/customers",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "customers"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Get Customers",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/customers",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "customers"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Update Customer",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\"first_name\":\"Ana Mod\"}"
+        },
+        "url": {
+          "raw": "http://localhost:3000/api/customers/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "customers",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Delete Customer",
+      "request": {
+        "method": "DELETE",
+        "url": {
+          "raw": "http://localhost:3000/api/customers/1",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "customers",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Total paid per customer",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/queries/total-paid-per-customer",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "queries",
+            "total-paid-per-customer"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Pending invoices",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/queries/pending-invoices",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "queries",
+            "pending-invoices"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Transactions by platform",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/queries/transactions-by-platform?platform=Nequi",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "queries",
+            "transactions-by-platform"
+          ],
+          "query": [
+            {
+              "key": "platform",
+              "value": "Nequi"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
